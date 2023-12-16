@@ -5,6 +5,7 @@ Run `cargo install shuttle`
 
 then run `cargo shuttle project start --idle-minutes 0`
 
+Remember to replace the user id with your own user id.
 
 then after creating a shuttle project run with `cargo shuttle deploy` to have it hosted.
 
