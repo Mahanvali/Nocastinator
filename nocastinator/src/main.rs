@@ -57,7 +57,7 @@ async fn event_handler(
         }
 
         poise::Event::PresenceUpdate { new_data } => {
-             if new_data.user.id == 764834445722386432 {
+             if new_data.user.id == USERID {
                  if new_data.status == OnlineStatus::Online {
                     tokio::time::sleep(tokio::time::Duration::from_secs(2 * 60)).await;
                     let user = UserId(764834445722386432);
