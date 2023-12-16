@@ -56,8 +56,10 @@ async fn event_handler(
             println!("Woop woop! {} is online", data_about_bot.user.name)
         }
 
+        let myuserid = "USER ID HERE"
+
         poise::Event::PresenceUpdate { new_data } => {
-             if new_data.user.id == USERID {
+             if new_data.user.id == myuserid {
                  if new_data.status == OnlineStatus::Online {
                     tokio::time::sleep(tokio::time::Duration::from_secs(2 * 60)).await;
                     let user = UserId(764834445722386432);
